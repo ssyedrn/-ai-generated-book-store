@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  background: radial-gradient(ellipse at bottom, #0d0d0d 0%, #000 100%);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ---------- DARK ROOM ---------- */
+.dark-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+.title {
+  font-size: 2rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+.node {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #6e00ff, #1a0033);
+  border-radius: 50%;
+  box-shadow: 0 0 40px #6e00ff;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 20px #6e00ff; }
+  50% { box-shadow: 0 0 60px #a066ff; }
+}
+.hint {
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+/* ---------- LIBRARY ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #222;
+}
+nav a {
+  color: #999;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #fff;
+}
+
+.books {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+.book-card {
+  background: #141414;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #3c006e;
+}
+.book-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.book-card button {
+  background: #6e00ff;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.book-card button:hover {
+  background: #8a2eff;
+}
+
+/* ---------- ADMIN DASHBOARD ---------- */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.panel {
+  background: #141414;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px #000;
+}
+input, textarea {
+  width: 100%;
+  background: #0d0d0d;
+  border: 1px solid #333;
+  color: #eee;
+  margin: 0.3rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+button {
+  background: #6e00ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background: #8a2eff;
+}
